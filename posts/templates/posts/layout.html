@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>django blog</title>
+    <!-- Favicons-->
+    
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    
+    
+    <!--  Android 5 Chrome Color-->
+    <meta name="theme-color" content="#EE6E73">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+  </head>
+  <body>
+    
+    <header class="container center-align">
+        <h1>Django Blog</h1>
+
+    </header>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    
+    <div class="center-align"><a class="center-align" href="/admin">Admin LogIn</a></div>  
+  </body>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+</html>
+      
