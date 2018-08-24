@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-'''
+
 #now for MYSQL database config connection
 DATABASES = {
     'default': {
@@ -92,7 +92,18 @@ DATABASES = {
         'PORT': ''
     }
 }
-
+'''
+#now for MYSQL database config connection
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'sql12253491',
+        'USER': 'sql12253491',
+        'PASSWORD': 'bTSlxsypHS',
+        'HOST': 'sql12.freemysqlhosting.net',
+        'PORT': ''
+    }
+}
 
 
 # Password validation
