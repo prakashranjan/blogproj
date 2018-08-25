@@ -73,14 +73,14 @@ WSGI_APPLICATION = 'blogproj.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-'''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
+'''
 #now for MYSQL database config connection
 DATABASES = {
     'default': {
@@ -94,17 +94,21 @@ DATABASES = {
 }
 '''
 #now for MYSQL database config connection
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sql12253491',
-        'USER': 'sql12253491',
-        'PASSWORD': 'bTSlxsypHS',
-        'HOST': 'sql12.freemysqlhosting.net',
-        'PORT': ''
+        'NAME': 'gcp_e1dd9f6f1541a542b588',
+        'USER': 'b30320d8f5b75a',
+        'PASSWORD': '09c24763',
+        'HOST': 'us-cdbr-gcp-east-01.cleardb.net',
+        'PORT': '',
+        'OPTIONS': {
+        'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+    },
     }
 }
-
+'''
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
